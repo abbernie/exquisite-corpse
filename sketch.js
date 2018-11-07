@@ -1,12 +1,14 @@
 
 function setup() {
 
-  createCanvas(400, 400);
+  createCanvas(600, 400);
 
 }
 
 function draw() {
 
-  print("Hello World!");
+ background(255,0,0);
+
+ ellipse(width/2, height/2, width);
 
 }
