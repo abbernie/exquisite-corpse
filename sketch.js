@@ -7,6 +7,8 @@ function setup() {
 
 function draw() {
 
-  print("Good afternoon!");
+ background(255,0,0);
+
+ ellipse(width/2, height/2, width);
 
 }
