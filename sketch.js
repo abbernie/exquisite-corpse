@@ -7,6 +7,6 @@ function setup() {
 
 function draw() {
 
-  print("Test!");
+  print("Hello World!");
 
 }
