@@ -8,6 +8,8 @@ function setup() {
 function draw() {
 
   print("Hello World!");
-  print("Goodnight!")
+  print("Goodnight!");
+  
+  rect(100, 100, 60, 80);
 
 }
