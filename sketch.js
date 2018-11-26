@@ -8,5 +8,6 @@ function setup() {
 function draw() {
 
   print("Hello World!");
+  print("Goodnight!")
 
 }
