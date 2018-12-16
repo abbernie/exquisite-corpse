@@ -1,4 +1,6 @@
 let tri;
+let cir_ypos = 300 //moving circle posotion
+let cir_speed = 5  //moving circle speed
 
 function setup() {
 
@@ -14,18 +16,16 @@ function draw() {
   background(255);
 
 
-
-
   drawSquares();
   drawFreeShape();
   drawCircles();
+
 
   push();
     translate(width*0.5, height*0.5);
     rotate(frameCount);
     tri.display();
   pop();
-
 }
 
 class Triangle {
@@ -48,10 +48,20 @@ class Triangle {
 
 function drawCircles() {
 
+  cir_ypos = cir_ypos - cir_speed;  //moves the circle my one speed each frame
+
+  if (cir_ypos < 63) {   //if the circle is at the top of the canvas it will change direction
+    cir_speed = -cir_speed;
+  }
+
+  if (cir_ypos > height-63) {   //if the circle is at the bottom of the canvas it will change direction
+    cir_speed = Math.abs(cir_speed);
+  }
+
   noStroke();
   fill(0,200,302)
   ellipse(200,200,100,100)
-  ellipse(200,300,80,80)
+  ellipse(200,cir_ypos,80,80)
 }
 
 function drawFreeShape() {
