@@ -9,7 +9,7 @@ function setup() {
 function draw() {
   background(220);
   for(let i =0;i<1000;i+=10){
-    nofit()
+  //  noFit()
     stroke('green')
     strokeWeight(4)
     ellipse(350,250,i,i)
