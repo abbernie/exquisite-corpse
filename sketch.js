@@ -1,4 +1,5 @@
 
+var x = 0;
 function setup() {
 
   createCanvas(600, 400);
@@ -12,7 +13,7 @@ function draw() {
     stroke('green')
     strokeWeight(4)
     ellipse(350,250,i,i)
-    
+
     stroke('blue')
     strokeWeight(3)
     ellipse(x,250,500,-i,500-i)
@@ -21,4 +22,5 @@ function draw() {
     x=0
   }else{
     x=x+3
+}
 }
